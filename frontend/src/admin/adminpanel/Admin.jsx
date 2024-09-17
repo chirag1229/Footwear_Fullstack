@@ -1,15 +1,14 @@
 // import { useState } from 'react'
 import './Admin.css'
-import Header from "../header/Header"
-import Slidebar from "../slidebar/Slidebar"
-import Home from "../home/Home"
+// import Header from "../header/Header"
+// import Home from "../home/Home"
 
 function Admin() {
   return (
       <div className='grid-container d-flex'>
-          <Header />
+          {/* <Header />
           <Slidebar />
-          <Home/>
+          <Home/> */}
           
     </div>
   )
