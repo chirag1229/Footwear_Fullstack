@@ -1,17 +1,19 @@
-// import { useState } from 'react'
-import './Admin.css'
+// // import { useState } from 'react'
+// import './Admin.css'
 // import Header from "../header/Header"
 // import Home from "../home/Home"
+// import Form from '../Pages/Form'
 
-function Admin() {
-  return (
-      <div className='grid-container d-flex'>
-          {/* <Header />
-          <Slidebar />
-          <Home/> */}
-          
-    </div>
-  )
-}
+// function Admin() {
+//   return (
+//     <div className='grid-container d-flex'>
+//     <h1>this is page</h1>
+//       {/* <Header />
+//       <Form />
+//       <Home /> */}
 
-export default Admin
+//     </div>
+//   )
+// }
+
+// export default Admin

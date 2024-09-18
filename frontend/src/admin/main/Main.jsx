@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './Main.css';
-import $ from "jquery"; // Import jQuery
+import $ from "jquery"; 
 import Header from '../header/Header';
 import Dashboard from '../Pages/Dashboard';
-import Form from "../Pages/Form";
+import FormData from "../Pages/FormData";
 
 function Main() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true); // Manage sidebar state
@@ -150,7 +150,9 @@ function Main() {
                         role="tabpanel"
                         aria-labelledby="v-pills-profile-tab"
                     >
-                        <Form/>
+                     
+                        <FormData/>
+                        
                     </div>
                     <div
                         className={`tab-pane fade ${activeTab === 'men' ? 'show active' : ''}`}
