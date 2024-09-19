@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar_menu{
+    margin-left: 80px;
+}
+
+.search {
+    margin-left: 200px;
+}
+
+#summer {
+    background-color: aquamarine;
+}
+
+#font,
+#navbarScrollingDropdown {
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.cart {
+    margin-right: 170px;
+}

@@ -1,11 +1,14 @@
 
 import './App.css';
-import Main from './admin/main/Main';
+// import Main from './admin/main/Main';
+import Home from './component/Home/Home';
+
 
 function App() {
   return (
     <>
-      <Main/>
+      {/* <Main/>  admin use*/}
+      <Home/>
     </>
   );
 }
