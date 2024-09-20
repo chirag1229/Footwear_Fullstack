@@ -1,48 +1,334 @@
 import React from 'react'
+import './home.css'
 import Navbar from '../Navbar/Navbar'
 import Carousel from 'react-bootstrap/Carousel';
 import Img1 from '../images/img_bg_1.jpeg';
 import Img2 from '../images/img_bg_2.jpeg';
 import Img3 from '../images/men.jpeg';
-
+import Button from 'react-bootstrap/Button';
+import second from '../images/women.jpeg'
+import first from '../images/item-15.jpeg'
+// import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import shoes1 from '../images/item-1.jpeg'
 
 function home() {
   return (
     <>
-  
+
       <Navbar />
 
       {/* First Section */}
       <div className='fluid'>
-        
-          <Carousel fade>
-            <Carousel.Item>
-            <img src={Img1} className='w-100' />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={Img2} className='w-100' />
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={Img3} className='w-100' />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+
+        <Carousel fade>
+          <Carousel.Item>
+            <img src={Img1} className='main_img w-100' />
+            <Carousel.Caption className='homeimg'>
+              <h1 >MEN'S</h1>
+              <p className='fs-3'> SHOES</p>
+              <p className='fs-2'>COLLECTION</p>
+              <Button variant="secondary">SHOP COLLECTION</Button>{' '}
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={Img2} className='main_img w-100' />
+            <Carousel.Caption className='homeimg'>
+              <h1>HUGE</h1>
+              <p className='fs-3'>SALE</p>
+              <p className='fs-2'>50% OFF</p>
+              <Button variant="secondary">SHOP COLLECTION</Button>{' '}
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={Img3} className='main_img w-100' />
+            <div >
+              <Carousel.Caption className='homeimg'>
+                <h1>NEW</h1>
+                <p className='fs-3'>
+                  ARRIVAL
                 </p>
+                <p className='fs-2'>UP TO 30% OFF</p>
+                <Button variant="secondary">SHOP COLLECTION</Button>{' '}
               </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        
+            </div>
+            
+          </Carousel.Item>
+        </Carousel>
+
       </div>
 
+      {/* section 2 */}
+
+      <div className='container-fluid '>
+        <div className='row  '>
+          <div className='col-md-12 text-center p-5'>
+            <h2 className='section-two-txt'>It started with a simple idea: Create quality, <br /> well-designed products that I wanted myself.</h2>
+          </div>
+        </div>
+
+        <div className='row'>
+          <div className='col-md-6 p-2'>
+            <div>
+              <img src={first} className='section2' />
+              <h2 className=' section-two-txt'>Shop Men's Collection</h2>
+            </div>
+          </div>
+          <div className='col-md-6'>
+            <div>
+              <img src={second} className='section2' />
+              <h2 className=' section-two-txt'>Shop Women's Collection</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* section 3 */}
+
+      <h2 className='bestseller'>BEST SELLER</h2>
+      
+      {/* card section-1 */}
+
+      <div className='section-three-card container'>
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+      </div>
+
+      {/* card section-2 */}
+      <div className='section-three-card container'>
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+      </div>
+
+    {/* card section-3 */}
+      <div className='section-three-card container'>
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+      </div>
+
+    {/* card section-4 */}
+      <div className='section-three-card container'>
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+        {/* card1 */}
+        <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+
+      </div>
+
+      <Button variant="secondary">SHOP ALL PRODUCTS</Button>{' '}
 
     </>
   )

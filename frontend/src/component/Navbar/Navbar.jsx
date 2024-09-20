@@ -39,7 +39,7 @@ function NavScrollExample() {
                                     style={{ maxHeight: '100px' }}
                                     navbarScroll
                                 >
-                                    <Nav.Link href="#action1" id='font'>HOME</Nav.Link>
+                                    <Nav.Link href="#action1" id='font' >HOME</Nav.Link>
                                     <NavDropdown title="MEN" id="navbarScrollingDropdown" >
                                         <NavDropdown.Item href="#action3" id='font'>Action</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4" id='font'>
@@ -79,6 +79,8 @@ function NavScrollExample() {
                 </div>
 
             </div>
+
+         
         </>
     );
 }

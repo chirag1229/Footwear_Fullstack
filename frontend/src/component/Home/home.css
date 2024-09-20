@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    border-radius: 50px;
+}
+
+.main_img {
+    width: 100%;
+    height: 700px;
+}
+
+.homeimg{
+    margin-bottom: 210px;
+}
+
+.section2 {
+    height: 600px;
+    width: 800px;
+    margin-left: 80px;
+}
+
+.section-two-txt{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.bestseller{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-three-card{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.card-contain{
+    height: 450px;
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-rupee{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+del{
+    color: red;
+}
+
+.allproduct{
+    margin: auto;
+}

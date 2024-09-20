@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.Navbar_menu{
+.Navbar_menu {
     margin-left: 80px;
 }
 
@@ -20,6 +20,14 @@
 #navbarScrollingDropdown {
     color: black;
     font-family: "Poppins", sans-serif;
+}
+.active{
+    color: red;
+}
+
+#font:hover,
+#navbarScrollingDropdown:hover {
+    color:red
 }
 
 .cart {
