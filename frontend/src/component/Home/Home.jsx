@@ -91,6 +91,7 @@ function home() {
 
       <div className='section-three-card container'>
         {/* card1 */}
+        
         <Card className='card-contain'  >
           <Card.Img variant="top" src={shoes1} />
           <Card.Body>

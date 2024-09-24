@@ -74,7 +74,7 @@ function NavScrollExample() {
             <div className='container-fluid' id='summer'>
                 <div className='row'>
                     <div className='col-md-12 text-center mt-2'>
-                        <h4>Our biggest sale yet 50% off all summer shoes</h4>
+                        <h4 className='text-light'>Our biggest sale yet 50% off all summer shoes</h4>
                     </div>
                 </div>
 
