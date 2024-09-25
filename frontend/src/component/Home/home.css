@@ -12,7 +12,7 @@
     height: 900px;
 }
 
-.homeimg{
+.homeimg {
     margin-bottom: 210px;
 }
 
@@ -22,26 +22,26 @@
     margin-left: 80px;
 }
 
-.section-two-txt{
+.section-two-txt {
     margin-top: 40px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }
 
-.bestseller{
+.bestseller {
     text-align: center;
     margin-top: 50px;
     font-family: "Montserrat", sans-serif;
 }
 
-.section-three-card{
+.section-three-card {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
 }
 
-.card-contain{
+.card-contain {
     height: 450px;
     width: 300px;
     font-size: 20px;
@@ -51,16 +51,75 @@
     justify-content: center;
 }
 
-.card-rupee{
+.card-rupee {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
-del{
+
+del {
     color: red;
 }
 
-.allproduct{
+.allproduct {
     margin: auto;
+}
+
+.btn1 {
+    margin-top: 70px;
+    margin-left: 550px;
+}
+
+#banner {
+    height: 250px;
+    width: 750px;
+}
+
+#banner2 {
+    height: 250px;
+    width: 430px;
+}
+
+#banner3 {
+    height: 250px;
+    width: 300px;
+    margin-left: 65px;
+}
+
+#banner1 {
+    height: 515px;
+    width: 515px;
+}
+
+.backimg {
+    width: 100%;
+    height:400px;
+    background: url('../images/custom_banner_image_1.jpeg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.484);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: hue;
+    background-attachment: fixed;
+}
+.bgtext{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.backimg h4{
+    font-family: "Comfortaa", sans-serif;
+}
+
+#bgbtn{
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 50px;
+    margin-left: 850px;
+}
+
+#section7{
+    height: 550px;
+    width: 600px;
 }

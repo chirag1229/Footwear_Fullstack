@@ -11,6 +11,12 @@ import first from '../images/item-15.jpeg'
 // import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import shoes1 from '../images/item-1.jpeg'
+import banner from '../images/banner_1.png'
+import banner1 from '../images/banner_4.png'
+import banner2 from '../images/banner_2.png'
+import banner3 from '../images/banner_3.png'
+import runner from '../images/custom_banner_image_1.jpeg'
+import store from '../images/shoe_store_1.jpeg'
 
 function home() {
   return (
@@ -63,7 +69,7 @@ function home() {
       <div className='container-fluid '>
         <div className='row  '>
           <div className='col-md-12 text-center p-5'>
-            <h2 className='section-two-txt'>It started with a simple idea: Create quality, <br /> well-designed products that I wanted myself.</h2>
+            <h2 className='section-two-txt'><b>It started with a simple idea: Create quality,</b> <br /><b> well-designed products that I wanted myself.</b></h2>
           </div>
         </div>
 
@@ -85,251 +91,133 @@ function home() {
 
       {/* section 3 */}
 
-      <h2 className='bestseller'>BEST SELLER</h2>
-      
-      {/* card section-1 */}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 mb-5">
+      <h2 className='bestseller'><b>BEST SELLER</b></h2>
 
-      <div className='section-three-card container'>
-        {/* card1 */}
+          </div>
+
+        </div>
+
+        <div className="row">
+          <div className="col-md-3">
+   <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+          </div>
+          <div className="col-md-3">
+   <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+          </div>
+
+          <div className="col-md-3">
+   <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+          </div>
+
+          <div className="col-md-3">
+   <Card className='card-contain'  >
+          <Card.Img variant="top" src={shoes1} />
+          <Card.Body>
+            <Card.Text className='text-center'>
+              Women's Boots Shoesguygb uygy Maca
+            </Card.Text>
+            <div className='card-rupee'>
+              <del> $5000 </del>
+              <p>$2000</p>
+            </div>
+          </Card.Body>
+        </Card>
+          </div>
+        </div>
         
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
+        <div className="row">
+          <div className="col-md-12">
+           <Button className=' btn1' variant="secondary">SHOP ALL PRODUCTS</Button>{' '}
+          </div>
+        </div>
       </div>
 
-      {/* card section-2 */}
-      <div className='section-three-card container'>
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
+     
+      {/* section 4 */}
+      <div className="container mt-5">
+        <div className="row">
+          <div  className="col-md-7">
+            <img id="banner" src={banner} />
+            
+            <div className="row mt-3">
+              <div className="col-md-6">
+                <img id="banner2" src={banner2} />
+              </div>
+              <div className="col-md-6">
+                <img id="banner3" src={banner3} />
+              </div>
             </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
+          </div>
+          <div className="col-md-5">
+              <img id="banner1" src={banner1} />
+          </div>
+        </div>
       </div>
 
-    {/* card section-3 */}
-      <div className='section-three-card container'>
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
+      {/* section 5 */}
+      
+    
+       <div className="container-fluid mt-5">
+        <div className="row p-0 m-0">
+             <div className="backimg ">
+            <h1 className='bgtext text-center mt-5'>Running with you <br /> force of nature</h1>
+            <h4 className=' text-center text-light mt-5 fs-4'>Bring your wardrobe up to speed with Autumn/Winter 2020: <br /> shop transitional pieces, all with 20% off</h4>
+             <Button id="bgbtn" variant="light">SHOP NOW</Button>{' '}
 
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
+          </div>
+       </div>
+ 
+      </div>
+  
+      {/* section 7 */}
+      <div className="container mt-5">
+        <div className="row">
+          <div  className="col-md-6">
+            <img id="section7" src={store} />
+            
+          </div>
+          <div className="col-md-6">
+              <img id="banner1" src={banner1}  alt='banner1'/>
+          </div>
+        </div>
       </div>
 
-    {/* card section-4 */}
-      <div className='section-three-card container'>
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-        {/* card1 */}
-        <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
-          <Card.Body>
-            <Card.Text className='text-center'>
-              Women's Boots Shoesguygb uygy Maca
-            </Card.Text>
-            <div className='card-rupee'>
-              <del> $5000 </del>
-              <p>$2000</p>
-            </div>
-          </Card.Body>
-        </Card>
-
-      </div>
-
-      <Button variant="secondary">SHOP ALL PRODUCTS</Button>{' '}
 
     </>
   )
