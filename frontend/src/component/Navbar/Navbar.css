@@ -19,7 +19,11 @@
 #font,
 #navbarScrollingDropdown {
     color: black;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif;
+     */
+    font-family: "Rokkitt", serif;
+    font-size: 18PX;
+    font-weight: 200;
 }
 .active{
     color: red;

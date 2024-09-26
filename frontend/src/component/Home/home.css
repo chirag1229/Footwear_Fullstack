@@ -119,7 +119,42 @@ del {
     margin-left: 850px;
 }
 
-#section7{
-    height: 550px;
-    width: 600px;
+.section6{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+}
+
+#section6{
+    height: 500px;
+    width: 550px;
+    margin-top: 80px;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 50px;
+}
+
+.aboutfont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section7{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section7 img{
+    height: 180px;
+    width: 250px;
+}
+
+.partner{
+    margin-top: 120px;
 }

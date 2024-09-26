@@ -15,21 +15,28 @@ import banner from '../images/banner_1.png'
 import banner1 from '../images/banner_4.png'
 import banner2 from '../images/banner_2.png'
 import banner3 from '../images/banner_3.png'
-import runner from '../images/custom_banner_image_1.jpeg'
+// import run from '../images/custom_banner_image_1.jpeg'
 import store from '../images/shoe_store_1.jpeg'
+import brand1 from '../images/brand-1.jpeg'
+import brand2 from '../images/brand-2.jpeg'
+import brand3 from '../images/brand-3.jpeg'
+import brand4 from '../images/brand-4.jpeg'
+import brand5 from '../images/brand-5.jpeg'
+import Footer from '../Footer/Footer';
 
-function home() {
+
+function Home() {
   return (
     <>
 
       <Navbar />
 
-      {/* First Section */}
+      {/* Section 1 */}
       <div className='fluid'>
 
         <Carousel fade>
           <Carousel.Item>
-            <img src={Img1} className='main_img w-100' />
+            <img src={Img1} className='main_img w-100' alt='Img1'/>
             <Carousel.Caption className='homeimg'>
               <h1 >MEN'S</h1>
               <p className='fs-3'> SHOES</p>
@@ -38,7 +45,7 @@ function home() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={Img2} className='main_img w-100' />
+            <img src={Img2} className='main_img w-100' alt='Img2' />
             <Carousel.Caption className='homeimg'>
               <h1>HUGE</h1>
               <p className='fs-3'>SALE</p>
@@ -47,7 +54,7 @@ function home() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={Img3} className='main_img w-100' />
+            <img src={Img3} className='main_img w-100' alt='Img3' />
             <div >
               <Carousel.Caption className='homeimg'>
                 <h1>NEW</h1>
@@ -76,13 +83,13 @@ function home() {
         <div className='row'>
           <div className='col-md-6 p-2'>
             <div>
-              <img src={first} className='section2' />
+              <img src={first} className='section2' alt='first'/>
               <h2 className=' section-two-txt'>Shop Men's Collection</h2>
             </div>
           </div>
           <div className='col-md-6'>
             <div>
-              <img src={second} className='section2' />
+              <img src={second} className='section2' alt='second' />
               <h2 className=' section-two-txt'>Shop Women's Collection</h2>
             </div>
           </div>
@@ -103,7 +110,7 @@ function home() {
         <div className="row">
           <div className="col-md-3">
    <Card className='card-contain'  >
-          <Card.Img variant="top" src={shoes1} />
+          <Card.Img variant="top" src={shoes1} alt='img'/>
           <Card.Body>
             <Card.Text className='text-center'>
               Women's Boots Shoesguygb uygy Maca
@@ -173,19 +180,19 @@ function home() {
       <div className="container mt-5">
         <div className="row">
           <div  className="col-md-7">
-            <img id="banner" src={banner} />
+            <img id="banner" src={banner} alt='banner' />
             
             <div className="row mt-3">
               <div className="col-md-6">
-                <img id="banner2" src={banner2} />
+                <img id="banner2" src={banner2}  alt='banner2'/>
               </div>
               <div className="col-md-6">
-                <img id="banner3" src={banner3} />
+                <img id="banner3" src={banner3} alt='banner3'/>
               </div>
             </div>
           </div>
           <div className="col-md-5">
-              <img id="banner1" src={banner1} />
+              <img id="banner1" src={banner1}  alt='banner1'/>
           </div>
         </div>
       </div>
@@ -205,22 +212,45 @@ function home() {
  
       </div>
   
-      {/* section 7 */}
+      {/* section 6 */}
       <div className="container mt-5">
-        <div className="row">
+        <div className="section6 row" >
           <div  className="col-md-6">
-            <img id="section7" src={store} />
-            
+            <img id="section6" src={store} alt='store' />
           </div>
-          <div className="col-md-6">
-              <img id="banner1" src={banner1}  alt='banner1'/>
+          <div className="aboutfont col-md-6">
+            <h2 className='aboutus'>About us</h2>
+            <h3 className='aboutus fs-2'>We strive to make your life better!</h3>
+            <p className='aboutus fs-5'>Step into style and comfort with the Urban Glide Sneakers. Designed for both everyday wear and weekend adventures, these sneakers feature a lightweight, breathable mesh upper that keeps your feet cool.</p>
+            <h4 className='aboutus fs-5'>PHONE NO :- +91 85314XXXXX</h4>
+            <h3 className='aboutus fs-5'>EMAIL ADD :- EXAMPLE123@gmail.com</h3>
           </div>
         </div>
       </div>
 
+      
+      {/* section 7 */}
+
+      <div className="container">
+        <div>
+          <h3 className='partner text-center'>Trusted Partners</h3>
+        </div>
+        <div className='section7 row mt-5'>
+          <img src={brand1} alt='brand1' />
+          <img src={brand2} alt='brand2'/>
+          <img src={brand3} alt='brand3' />
+          <img src={brand4} alt='brand4' />
+          <img src={brand5} alt='brand5' />
+        </div>
+      </div>
+
+    
+
+
+      <Footer/>
 
     </>
   )
 }
 
-export default home
+export default Home

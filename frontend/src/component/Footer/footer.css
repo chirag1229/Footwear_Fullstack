@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: "Rokkitt", serif;
+    /* font-family: "Rokkitt", Georgia, serif; */
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.brandfont {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}

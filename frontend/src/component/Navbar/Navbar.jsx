@@ -4,18 +4,33 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navbar.css'
+import { useNavigate } from "react-router-dom";
+import './Navbar.css';
 
 function NavScrollExample() {
+    const navigation = useNavigate();
+    
+    const gotohome = () => {
+        navigation('/');
+    };
+
+    const gotoMen = () => {
+        navigation('/men');
+    };
+
+    const gotoWomen = () => {
+        navigation('/women');
+    };
+
     return (
         <>
-            <div className='container-fluid '>
-                <div className='row pt-4 mb-4 '>
+            <div className='container-fluid'>
+                <div className='row pt-4 mb-4'>
                     <div className='col-md-6 text-center'>
                         <h2 className='footwear'>Footwear</h2>
                     </div>
-                    <div className=' col-md-6 '>
-                        <div className='col-md-6 col-sm-6 '>
+                    <div className='col-md-6'>
+                        <div className='col-md-6 col-sm-6'>
                             <Form className="d-flex">
                                 <Form.Control
                                     type="search"
@@ -23,7 +38,9 @@ function NavScrollExample() {
                                     className="me-2"
                                     aria-label="Search"
                                 />
-                                <Button variant="outline-secondary rounded-circle" ><i class="fa-solid fa-magnifying-glass"></i></Button>
+                                <Button variant="outline-secondary rounded-circle">
+                                    <i className="fa-solid fa-magnifying-glass"></i>
+                                </Button>
                             </Form>
                         </div>
                     </div>
@@ -31,7 +48,7 @@ function NavScrollExample() {
             
                 <div className='row'>
                     <Navbar expand="lg">
-                        <Container >
+                        <Container>
                             <Navbar.Toggle aria-controls="navbarScroll" />
                             <Navbar.Collapse id="navbarScroll">
                                 <Nav
@@ -39,36 +56,23 @@ function NavScrollExample() {
                                     style={{ maxHeight: '100px' }}
                                     navbarScroll
                                 >
-                                    <Nav.Link href="#action1" id='font' >HOME</Nav.Link>
-                                    <NavDropdown title="MEN" id="navbarScrollingDropdown" >
-                                        <NavDropdown.Item href="#action3" id='font'>Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4" id='font'>
-                                            Another action
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action3" id='font'>Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4" id='font'>
-                                            Another action
-                                        </NavDropdown.Item>
-
+                                    <Nav.Link id='font' onClick={gotohome}>HOME</Nav.Link>
+                                    <NavDropdown title="MEN" id="navbarScrollingDropdown">
+                                        <NavDropdown.Item id='font' onClick={gotoMen}>PRODUCT DETAIL</NavDropdown.Item>
+                                        <NavDropdown.Item id='font'>SHOPPING CART</NavDropdown.Item>
+                                        <NavDropdown.Item id='font'>CHECK OUT</NavDropdown.Item>
                                     </NavDropdown>
-                                    <Nav.Link href="#action2" id='font' >WOMEN</Nav.Link>
-
-                                    <Nav.Link href="#" id='font'>
-                                        ABOUT
-                                    </Nav.Link>
-                                    <Nav.Link href="#" id='font'>
-                                        CONTECT
-                                    </Nav.Link>
-
+                                    <Nav.Link href="#" id='font' onClick={gotoWomen}>WOMEN</Nav.Link>
+                                    <Nav.Link href="#" id='font'>ABOUT</Nav.Link>
+                                    <Nav.Link href="#" id='font'>CONTACT</Nav.Link>
                                 </Nav>
                                 <div className='cart' id='font'>
-                                    <i class="fa-solid fa-cart-shopping fs-6"></i> {''} CART
+                                    <i className="fa-solid fa-cart-shopping fs-6"></i> CART
                                 </div>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-            </div>
-           
+                </div>
             </div>
 
             <div className='container-fluid' id='summer'>
@@ -77,10 +81,7 @@ function NavScrollExample() {
                         <h4 className='text-light'>Our biggest sale yet 50% off all summer shoes</h4>
                     </div>
                 </div>
-
             </div>
-
-         
         </>
     );
 }
