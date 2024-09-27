@@ -230,7 +230,6 @@ function Home() {
 
       
       {/* section 7 */}
-
       <div className="container">
         <div>
           <h3 className='partner text-center'>Trusted Partners</h3>
@@ -244,9 +243,7 @@ function Home() {
         </div>
       </div>
 
-    
-
-
+  
       <Footer/>
 
     </>

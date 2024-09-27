@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+iframe{
+    margin-top: 100px;
+}
+
+.contact{
+    font-family:"Rokkitt",
+        Georgia,
+        serif;
+}

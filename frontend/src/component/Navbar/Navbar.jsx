@@ -22,6 +22,23 @@ function NavScrollExample() {
         navigation('/women');
     };
 
+    const gotoCart = () => { 
+        navigation('/cart'); 
+    }
+
+     const gotoAbout = () => { 
+        navigation('/about'); 
+    }
+
+    const gotoContact = () => { 
+        navigation('/contact'); 
+    }
+
+   const gotoLogin = () => { 
+        navigation('/'); 
+    }
+  
+
     return (
         <>
             <div className='container-fluid'>
@@ -63,12 +80,13 @@ function NavScrollExample() {
                                         <NavDropdown.Item id='font'>CHECK OUT</NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Link href="#" id='font' onClick={gotoWomen}>WOMEN</Nav.Link>
-                                    <Nav.Link href="#" id='font'>ABOUT</Nav.Link>
-                                    <Nav.Link href="#" id='font'>CONTACT</Nav.Link>
+                                    <Nav.Link href="#" id='font'   onClick={gotoAbout}>ABOUT</Nav.Link>
+                                    <Nav.Link href="#" id='font' onClick={gotoContact}>CONTACT</Nav.Link>
                                 </Nav>
-                                <div className='cart' id='font'>
+                                <div className='cart' id='font'  onClick={gotoCart}>
                                     <i className="fa-solid fa-cart-shopping fs-6"></i> CART
                                 </div>
+                                <Nav.Link id='font'onClick={gotoLogin} >USER</Nav.Link>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>

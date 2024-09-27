@@ -26,14 +26,15 @@
     font-weight: 200;
 }
 .active{
-    color: red;
+    color: #88c8bc;
 }
 
 #font:hover,
 #navbarScrollingDropdown:hover {
-    color:red
+    color:#88c8bc;
 }
 
 .cart {
     margin-right: 170px;
+    cursor: pointer;
 }
