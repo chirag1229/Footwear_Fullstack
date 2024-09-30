@@ -35,7 +35,7 @@ function NavScrollExample() {
     }
 
    const gotoLogin = () => { 
-        navigation('/'); 
+        navigation('/login'); 
     }
   
 
@@ -86,7 +86,7 @@ function NavScrollExample() {
                                 <div className='cart' id='font'  onClick={gotoCart}>
                                     <i className="fa-solid fa-cart-shopping fs-6"></i> CART
                                 </div>
-                                <Nav.Link id='font'onClick={gotoLogin} >USER</Nav.Link>
+                                <Nav.Link id='font' onClick={gotoLogin} > <i class="user fa-solid fa-user"></i> USER</Nav.Link>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>

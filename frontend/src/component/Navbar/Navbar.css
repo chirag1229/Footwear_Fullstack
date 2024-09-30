@@ -24,6 +24,7 @@
     font-family: "Rokkitt", serif;
     font-size: 18PX;
     font-weight: 200;
+    
 }
 .active{
     color: #88c8bc;
@@ -38,3 +39,4 @@
     margin-right: 170px;
     cursor: pointer;
 }
+

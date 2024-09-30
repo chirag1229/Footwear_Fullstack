@@ -20,14 +20,14 @@ function App() {
     
       
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/men" element={<Men />} />
         <Route path='/women' element={<Women />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/Registration' element={<Registration />} />
-        <Route path='/' element={<Login />} />
+        <Route path='/login' element={<Login />} />
 
 
 
