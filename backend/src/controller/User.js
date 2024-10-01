@@ -1,27 +1,40 @@
+
 const { userModel } = require("../models/User")
-// const mongoose = require('mongoose');
+
+
+const getAllUser = async (req, res) => {
+    const UserData = await userModel.find()
+
+    res.json({
+        msg: "All User",
+        UserData
+    })
+}
 
 const registerUser = async (req, res) => {
 
     try {
         const { Username, email, password } = req.body
 
-        await userModel.create({
+
+        
+        const UserData = await userModel.create({
             Username: Username,
             email: email,
             password: password
         })
 
-        res.status(201).json(
+        res.status(200).json(
             {
-                msg: " user create susccess fully"
+                msg: " user create susccess fully",
+                UserData
             }
         )
 
 
     } catch (error) {
         res.status(503).json({
-            msg: "internal server error"
+            msg: "Internal server error"
         })
     }
 }
@@ -38,7 +51,7 @@ const loginuser = async (req, res) => {
             });
         }
 
-       
+
         res.status(200).json({
             msg: "Login success"
         });
@@ -51,8 +64,7 @@ const loginuser = async (req, res) => {
     }
 }
 
-
-
 module.exports = {
-    registerUser, loginuser
+    registerUser, loginuser,
+    getAllUser
 }
