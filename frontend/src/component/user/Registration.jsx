@@ -5,35 +5,44 @@ import axios from "axios";
 function Registration() {
   const navigation = useNavigate();
 
-  const [username, setUserName] = useState("");
+  const [Username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [Confirmpassword, setConfirmpassword] = useState("");
+
 
   const gotoLogin = () => {
     navigation("/login");
   };
 
+  
   const Signup = async (e) => {
     e.preventDefault();
-    const AllFormData = { username, email, password };
+    const AllFormData = { Username, email, password };
+    if (password === Confirmpassword) {
+      try {
+        await axios.post(
+          "https://rb3fzl8w-8000.inc1.devtunnels.ms/user/register",
+          AllFormData,
+          {
+            headers: {
+              'Content-type': 'application/json',
+            },
+          }
+        );
 
-    try {
-      await axios.post(
-        "https://rb3fzl8w-3000.inc1.devtunnels.ms/user/register",
-        AllFormData,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-        }
-      );
-
-      setUserName("");
-      setEmail("");
-      setPassword("");
-    } catch (error) {
-      console.log("Error", error);
+        setUserName("");
+        setEmail("");
+        setPassword("");
+        setConfirmpassword("");
+      } catch (error) {
+        console.log("Error", error);
+      }
+    } else {
+      alert("Password is wrong");
     }
+
+   
   };
 
   return (
@@ -61,7 +70,7 @@ function Registration() {
                           type="text"
                           id="form3Example1cg"
                           className="form-control form-control-lg"
-                          value={username}
+                          value={Username}
                           onChange={(e) => setUserName(e.target.value)}
                         />
                         <label className="form-label" htmlFor="form3Example1cg">
@@ -97,6 +106,8 @@ function Registration() {
                           type="password"
                           id="form3Example4cdg"
                           className="form-control form-control-lg"
+                          value={Confirmpassword}
+                          onChange={(e) => setConfirmpassword(e.target.value)}
                         />
                         <label
                           className="form-label"
