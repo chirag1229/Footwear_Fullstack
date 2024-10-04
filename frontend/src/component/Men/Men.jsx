@@ -10,7 +10,6 @@ export default function Men() {
     <div>
       
       <Navbar/>
-      <h1>men</h1>
 
       <div className="container">
         <div className="row">

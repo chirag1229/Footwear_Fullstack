@@ -9,8 +9,6 @@ function Women() {
   return (
       <div>
           <Navbar/>
-
-      <h1>Women</h1>
       
        <div className="container">
         <div className="row">
